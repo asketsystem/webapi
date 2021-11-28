@@ -1,0 +1,24 @@
+{
+  "name": "webapi",
+  "version": "1.0.0",
+  "description": "Building RESTful Web APIs with Node.js, Express, MongoDB and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.js",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && open run start"
+  },
+  "author": "Asketsystem",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
